@@ -181,6 +181,7 @@ body {
 .skill-icon {
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
   margin-bottom: 50px;
 }
 
@@ -284,27 +285,27 @@ body {
 
   .header-text h4,
   .header-text p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .header-text h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 10px;
   }
 
   .header-text h2 {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 10px;
   }
 
   .btn {
     font-size: 15px;
-    padding: 5px 20px;
-    margin-top: 20px;
+    padding: 7px 25px;
+    margin-top: 40px;
   }
 
   .bitmoji {
-    width: 200px;
+    width: 240px;
     padding-top: 10px;
   }
 
@@ -330,7 +331,7 @@ body {
     width: 30px;
     height: 30px;
     top: 350px;
-    left: 180px;
+    left: 220px;
   }
 
   .skills h2 {
@@ -341,6 +342,7 @@ body {
   .skill-icon {
     margin-bottom: 50px;
     width: 350px;
+    transform: translateX(15px);
   }
 
   .skill-icon p span {
@@ -349,6 +351,6 @@ body {
 
   .skill-icon p ion-icon,
   .skill-icon i {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
