@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.navB {
+  height: 60px;
+  width: 100%;
+  background-color: #09090f;
+
+  position: relative;
+}
+
+.navB > .nav-header {
+  display: inline;
+}
+
+.navB > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 50px;
+}
+
+.navB > .nav-btn {
+  display: none;
+}
+
+.navB > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.navB > .nav-links > a {
+  font-family: "Roboto Mono", monospace;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #04eeee;
+}
+
+.navB > #nav-check {
+  display: none;
+}
+
+#logo {
+  width: 70px;
+}
+
+.header {
+  background-color: #09090f;
+}
+
+.header-text {
+  color: #a7a8a8;
+  padding-top: 130px;
+}
+
+.header-text h4 {
+  font-size: 18x;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 60px;
+  letter-spacing: 3px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  font-family: "Martel", serif;
+  font-weight: 900;
+  color: #d1d4d4;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.header-text h2 {
+  font-size: 25px;
+  font-family: "Martel", serif;
+  padding-left: 250px;
+  padding-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.header-img {
+  position: relative;
+  display: flex;
+}
+
+.bitmoji {
+  width: 400px;
+  padding-top: 60px;
+}
+
+.socials {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials ion-icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #04eeee;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.socials ion-icon:hover {
+  transform: translateX(5px);
+}
+
+.circle-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(57, 255, 7);
+  border-radius: 49% 61% 48% 50% / 17% 52% 51% 80%;
+  bottom: 10%;
+  right: 10%;
+  animation: animate 60s linear infinite;
+}
+
+.circle-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(255, 98, 7);
+  top: 350px;
+  left: 10%;
+  border-radius: 100% 0% 73% 0% / 100% 0% 100% 60%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navB > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navB > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navB > .nav-btn > label:hover,
+  .navB #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navB > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navB > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #09090f;
+    text-align: center;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 99;
+  }
+  .navB > .nav-links > a {
+    padding-top: 30px;
+    display: block;
+    width: 100%;
+  }
+  .navB > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .navB > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-text {
+    padding-top: 50px;
+  }
+
+  .header-text h4 {
+    font-size: 15x;
+    padding-left: 30px;
+  }
+
+  .header-text h1 {
+    font-size: 35px;
+    padding-left: 60px;
+    padding-top: 15px;
+  }
+
+  .header-text h2 {
+    font-size: 18px;
+    padding-left: 120px;
+    padding-top: 15px;
+  }
+
+  .bitmoji {
+    width: 300px;
+    padding-top: 20px;
+  }
+
+  .socials {
+    right: 8%;
+    top: 170px;
+  }
+
+  .circle-2 {
+    width: 40px;
+    height: 40px;
+    top: 250px;
+  }
+}
