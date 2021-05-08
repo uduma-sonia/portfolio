@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css"> -->
     <link rel="stylesheet" href="./icofont/icofont.min.css" />
 
     <link
@@ -14,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <title>Sonia Uduma</title>
   </head>
   <body>
     <!-- Navigation -->
@@ -22,7 +21,9 @@
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
         <div class="nav-title">
-          <img id="logo" src="img/logo.png" alt="" />
+          <a href="./index.html">
+            <img id="logo" src="img/logo.png" alt="" />
+          </a>
         </div>
       </div>
       <div class="nav-btn">
@@ -34,11 +35,11 @@
       </div>
 
       <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="./index.html">Home</a>
         <a href="#">About me</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
 
@@ -55,7 +56,7 @@
             based in Port-Harcourt, Nigeria.
           </p>
 
-          <button class="btn">Hire me</button>
+          <button class="btn btn-hire">Hire me</button>
         </div>
 
         <div class="column is-6 header-img">
@@ -64,10 +65,27 @@
           </div>
 
           <div class="socials">
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
+            <a href="https://twitter.com/Sonia_Uduma" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="https://github.com/uduma-sonia" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sonia-uduma-3529501ba/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+
+            <a href="https://instagram.com/that_sonia" target="_blank"></a>
             <ion-icon name="logo-instagram"></ion-icon>
+
+            <a href="https://codepen.io/uduma" target="_blank">
+              <ion-icon name="logo-codepen"></ion-icon>
+            </a>
           </div>
         </div>
       </div>
@@ -78,68 +96,256 @@
     <div class="circle-2"></div>
 
     <!-- SKILLS -->
-    <section class="section skills">
+    <section class="section skills" id="skills">
       <h2>My Skills</h2>
 
-      <!-- FIRST SKILLS ROW -->
-      <div class="columns is-desktop">
-        <div class="column skill-icon is-6">
-          <p>
-            <ion-icon name="logo-html5"></ion-icon>
-            <br />
-            <span>HTML</span>
-          </p>
+      <div class="columns">
+        <div class="column is-6">
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="logo-html5"></ion-icon>
+              html
+            </button>
+          </div>
 
-          <p>
-            <ion-icon name="logo-css3"></ion-icon>
-            <br />
-            <span>CSS</span>
-          </p>
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="logo-css3"></ion-icon>
+              CSS
+            </button>
+          </div>
 
-          <p>
-            <i class="icofont-bootstrap"></i>
-            <br />
-            <span>Bootstrap</span>
-          </p>
+          <div>
+            <button class="skill-btn">
+              <i class="icofont-bootstrap"></i>
+              Bootsrap
+            </button>
+          </div>
 
-          <p>
-            <ion-icon name="logo-react"></ion-icon>
-            <br />
-            <span>React</span>
-          </p>
-        </div>
-      </div>
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="logo-javascript"></ion-icon>
+              JavaScript
+            </button>
+          </div>
 
-      <!-- SECOND SKILLS ROW -->
-      <div class="columns is-desktop">
-        <div class="column skill-icon is-6">
-          <p>
-            <ion-icon name="logo-javascript"></ion-icon>
-            <br />
-            <span>JavaScript</span>
-          </p>
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="logo-react"></ion-icon>
+              React
+            </button>
+          </div>
 
-          <p>
-            <ion-icon name="logo-wordpress"></ion-icon>
-            <br />
-            <span>WordPress</span>
-          </p>
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="logo-wordpress"></ion-icon>
+              WordPress
+            </button>
+          </div>
 
-          <p>
-            <ion-icon name="git-branch-outline"></ion-icon>
-            <br />
-            <span>Git</span>
-          </p>
-
-          <p>
-            <ion-icon name="logo-react"></ion-icon>
-            <br />
-            <span>React</span>
-          </p>
+          <div>
+            <button class="skill-btn">
+              <ion-icon name="git-branch-outline"></ion-icon>
+              Git
+            </button>
+          </div>
         </div>
       </div>
     </section>
-    <!-- <ion-icon name="logo-wordpress"></ion-icon> -->
+
+    <!-- SKILLS -->
+
+    <!-- PROJECTS -->
+
+    <section class="section sub-head" id="projects">
+      <h2>Projects i've worked on</h2>
+
+      <div class="columns">
+        <div class="column">
+          <article class="accordion">
+            <input
+              type="checkbox"
+              name="collapse"
+              id="handle1"
+              checked="checked"
+            />
+            <h3 class="handle">
+              <label for="handle1">Animated landing</label>
+            </h3>
+            <div class="content">
+              <div>
+                <h4>An Animated Pringles Landing page</h4>
+                <p>tools used &UnderBar; HTML, Css, JavaScript, GSAP</p>
+
+                <button class="btn-style">
+                  <a
+                    href="https://animated-pringles-landing.netlify.app/"
+                    target="_blank"
+                  >
+                    view site
+                    <ion-icon name="exit-outline"></ion-icon>
+                  </a>
+                </button>
+
+                <button class="btn-style">
+                  <a
+                    href="https://github.com/uduma-sonia/Pringles-Landing-page"
+                    target="_blank"
+                  >
+                    Github
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </button>
+              </div>
+
+              <div>
+                <img src="./img/pringles.png" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <input type="checkbox" name="collapse2" id="handle2" />
+            <h3 class="handle">
+              <label for="handle2">Search Engine for Photos</label>
+            </h3>
+            <div class="content">
+              <div>
+                <h4>A search Engine for Images</h4>
+                <p>tools used &UnderBar; HTML, Css, JavaScript, API</p>
+
+                <button class="btn-style">
+                  <a href="https://pretzz.netlify.app" target="_blank">
+                    view site
+                    <ion-icon name="exit-outline"></ion-icon>
+                  </a>
+                </button>
+
+                <button class="btn-style">
+                  <a
+                    href="https://github.com/uduma-sonia/search-engine"
+                    target="_blank"
+                  >
+                    Github
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </button>
+              </div>
+
+              <div>
+                <img src="./img/pretzz.png" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <input type="checkbox" name="collapse2" id="handle3" />
+            <h3 class="handle">
+              <label for="handle3">E-commerce Site for a liquor store</label>
+            </h3>
+            <div class="content">
+              <div>
+                <h4>An E-Commerce store</h4>
+                <p>(under construction)</p>
+                <p>tools used &UnderBar; HTML, Css, JavaScript</p>
+
+                <button class="btn-style">
+                  <a href="https://w-l-store.netlify.app" target="_blank">
+                    view site
+                    <ion-icon name="exit-outline"></ion-icon>
+                  </a>
+                </button>
+
+                <button class="btn-style">
+                  <a
+                    href="https://github.com/uduma-sonia/e-commerce-site"
+                    target="_blank"
+                  >
+                    Github
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </button>
+              </div>
+
+              <div>
+                <img src="./img/w_l.png" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <input type="checkbox" name="collapse2" id="handle4" />
+            <h3 class="handle">
+              <label for="handle4">Construction Company</label>
+            </h3>
+            <div class="content">
+              <div>
+                <h4>A full website for a Construction company</h4>
+                <p>tools used &UnderBar; HTML, Css, Bootstrap, JavaScript</p>
+
+                <button class="btn-style">
+                  <a href="https://paddle-homes.netlify.app" target="_blank">
+                    view site
+                    <ion-icon name="exit-outline"></ion-icon>
+                  </a>
+                </button>
+
+                <button class="btn-style">
+                  <a
+                    href="https://github.com/uduma-sonia/paddle-homes"
+                    target="_blank"
+                  >
+                    Github
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </button>
+              </div>
+
+              <div>
+                <img src="./img/paddle.png" alt="" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2>get in touch 👋</h2>
+
+      <div class="columns">
+        <div class="column is-12">
+          <div>
+            <h3>E-mail 📧</h3>
+
+            <a href="mailto:sohnyauduma@gmail.com">
+              sohnyauduma@gmail.com
+              <ion-icon name="link-outline"></ion-icon>
+            </a>
+
+            <h3 class="phone">Phone 📱</h3>
+            <a href="+2347011523595">+(234) 701 1523 596</a> <br />
+            <a href="+2348105616400">+(234) 810 5616 400</a>
+          </div>
+
+          <div>
+            <h3 class="resume">Resume 📁</h3>
+            <button class="btn btn-hire down-btn">Hire me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2021 Uduma Sonia</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </body>

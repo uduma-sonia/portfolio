@@ -5,15 +5,66 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+.btn-style,
+.btn-hire {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-style:after,
+.btn-hire::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-style:hover:after,
+.btn-hire:hover::after {
+  top: 0;
+  height: 100%;
+}
+
+.btn-style:active {
+  top: 2px;
+}
+.skills h2,
+.contact h2,
+.sub-head h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 3px;
+  padding-bottom: 50px;
+  text-transform: capitalize;
+}
+
+.contact,
+.sub-head,
+.skills {
+  color: #a7a8a8;
+  padding-top: 100px;
+  padding-left: 70px;
 }
 
 .navB {
   height: 60px;
   width: 100%;
-  background-color: rgb(0, 0, 0);
-
   position: relative;
 }
 
@@ -58,7 +109,6 @@ body {
 }
 
 .header {
-  background-color: rgb(0, 0, 0);
   padding-bottom: 160px;
 }
 
@@ -111,6 +161,16 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: white;
+  outline: none;
+  border: 1px solid #04eeee;
+}
+
+.btn-hire:hover::after {
+  border-radius: 50px;
+}
+
 .header-img {
   position: relative;
   display: flex;
@@ -123,7 +183,7 @@ body {
 
 .socials {
   position: fixed;
-  right: 15%;
+  right: 5%;
   top: 30%;
   display: flex;
   flex-direction: column;
@@ -162,44 +222,180 @@ body {
   border-radius: 100% 0% 73% 0% / 100% 0% 100% 60%;
 }
 
-.skills {
-  background-color: rgb(0, 0, 0);
-  color: #a7a8a8;
-  padding-top: 130px;
-  padding-left: 100px;
+/* SKILLS */
+
+.skills > div > div {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 50px;
+  grid-column-gap: 60px;
 }
 
-.skills h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  color: #fff;
-  letter-spacing: 3px;
-  padding-bottom: 50px;
-}
-
-.skill-icon {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid red;
-  margin-bottom: 50px;
-}
-
-.skill-icon p {
+.skill-btn {
+  position: relative;
+  width: 250px;
+  font-size: 20px;
   font-family: "Roboto Mono", monospace;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid grey;
+  outline: none;
+  color: #fff;
+  padding: 10px 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.skill-icon p span {
+.skill-btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: -4%;
+  right: -4%;
+  background-color: transparent;
+  border: 1px solid rgb(255, 98, 7);
+  z-index: 1;
+}
+
+/* COLLAPSIBLE */
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion {
+  margin-bottom: 1em;
+  padding: 0px 100px 0px 50px;
+}
+
+.accordion label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  display: block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  border: 1px solid rgb(255, 98, 7);
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  font-family: "Roboto Mono", monospace;
+  padding: 15px;
+  border: 1px solid #414040;
+  border-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.content h4,
+.content p {
   color: #04eeee;
 }
 
-.skill-icon p ion-icon,
-.skill-icon i {
-  font-size: 60px;
+.content button {
+  border-bottom: 5px solid rgb(255, 98, 7);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 5px 8px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.content a {
+  color: #000;
+}
+
+.content a:hover {
+  color: #fff;
+}
+
+.content img {
+  width: 400px;
+  height: 300px;
+  box-shadow: 1px 1px 10px rgb(53, 52, 52);
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+
+/* CONTACT */
+.contact > div > div {
+  padding: 0px 400px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #04eeee;
+  padding-bottom: 0px;
+}
+
+.contact a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  color: rgb(231, 229, 229);
+}
+
+.contact a:hover {
+  color: rgb(163, 162, 162);
+}
+
+.phone {
+  margin-top: 50px;
+}
+
+.down-btn {
+  margin-top: 20px;
+}
+
+footer {
+  border-top: 1px solid gray;
+  padding: 20px 0px;
+  text-align: center;
 }
 
 @keyframes animate {
@@ -215,6 +411,14 @@ body {
 }
 
 @media (max-width: 800px) {
+  .header-text,
+  .sub-head,
+  .contact,
+  .skills {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+
   .navB > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -262,6 +466,54 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+
+  .skills > div > div {
+    padding-left: 20px;
+  }
+
+  .skills > div > div {
+    padding-left: 10px;
+    grid-template-columns: 170px 170px;
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+  }
+
+  .skill-btn {
+    width: 100%;
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .accordion > input[type="checkbox"]:checked ~ .content {
+    flex-direction: column;
+  }
+
+  .accordion {
+    padding: 0px 10px;
+  }
+
+  .content img {
+    margin-top: 50px;
+    width: 250px;
+    height: 200px;
+  }
+
+  .contact > div > div {
+    padding: 0px 0px 0px 20px;
+    flex-direction: column;
+  }
+
+  .contact h3 {
+    font-size: 15px;
+  }
+
+  .contact a {
+    font-size: 19px;
+  }
+
+  .resume {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -273,14 +525,13 @@ body {
     width: 40px;
   }
 
-  .header {
-    padding-bottom: 70px;
+  .contact h2,
+  .sub-head h2 {
+    font-size: 20px;
   }
 
-  .header-text,
-  .skills {
-    padding-top: 40px;
-    padding-left: 10px;
+  .header {
+    padding-bottom: 70px;
   }
 
   .header-text h4,
@@ -305,13 +556,13 @@ body {
   }
 
   .bitmoji {
-    width: 240px;
+    width: 250px;
     padding-top: 10px;
   }
 
   .socials {
     position: absolute;
-    left: 10px;
+    right: 30px;
     top: 120px;
   }
 
@@ -332,25 +583,5 @@ body {
     height: 30px;
     top: 350px;
     left: 220px;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-
-  .skill-icon {
-    margin-bottom: 50px;
-    width: 350px;
-    transform: translateX(15px);
-  }
-
-  .skill-icon p span {
-    font-size: 15px;
-  }
-
-  .skill-icon p ion-icon,
-  .skill-icon i {
-    font-size: 40px;
   }
 }
