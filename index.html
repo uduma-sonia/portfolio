@@ -33,13 +33,10 @@
       href="./img/LogoMakr-3ruDYB.png"
     />
     <link rel="stylesheet" href="./icofont/icofont.min.css" />
-    <link rel="stylesheet" href="mode.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
 
     <title>Uduma Sonia &mdash;Portfolio</title>
@@ -85,8 +82,9 @@
             Transforming Creative Ideas to efficient web applications
           </p>
 
-          <button class="btn btn-hire">See my CV</button>
-          <button onclick="myFunction()">dark mode</button>
+          <button class="btn btn-hire">
+            <a href="#contact"> Hire Me </a>
+          </button>
         </div>
 
         <div class="column is-6 header-img">
@@ -132,49 +130,49 @@
       <div class="columns">
         <div class="column is-6">
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-1">
               <ion-icon name="logo-html5"></ion-icon>
               html
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-2">
               <ion-icon name="logo-css3"></ion-icon>
               CSS
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-3">
               <i class="icofont-bootstrap"></i>
               Bootsrap
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-4">
               <ion-icon name="logo-javascript"></ion-icon>
               JavaScript
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-5">
               <ion-icon name="logo-react"></ion-icon>
               React
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-6">
               <ion-icon name="logo-wordpress"></ion-icon>
               WordPress
             </button>
           </div>
 
           <div>
-            <button class="skill-btn">
+            <button class="skill-btn btn-7">
               <ion-icon name="git-branch-outline"></ion-icon>
               Git
             </button>
@@ -192,7 +190,7 @@
 
       <div class="columns">
         <div class="column">
-          <article class="accordion">
+          <article class="accordion acc-1">
             <input
               type="checkbox"
               name="collapse"
@@ -231,7 +229,7 @@
             </div>
           </article>
 
-          <article class="accordion">
+          <article class="accordion acc-2">
             <input type="checkbox" name="collapse2" id="handle2" />
             <h3 class="handle">
               <label for="handle2">Search Engine</label>
@@ -265,7 +263,7 @@
             </div>
           </article>
 
-          <article class="accordion">
+          <article class="accordion acc-3">
             <input type="checkbox" name="collapse2" id="handle3" />
             <h3 class="handle">
               <label for="handle3">E-commerce Site</label>
@@ -300,7 +298,7 @@
             </div>
           </article>
 
-          <article class="accordion">
+          <article class="accordion acc-4">
             <input type="checkbox" name="collapse2" id="handle4" />
             <h3 class="handle">
               <label for="handle4">Construction Company</label>
@@ -352,13 +350,20 @@
             </a>
 
             <h3 class="phone">Phone 📱</h3>
-            <a href="+2347011523595">+(234) 701 1523 596</a> <br />
-            <a href="+2348105616400">+(234) 810 5616 400</a>
+            <a href="tel:+2347011523595">+(234) 701 1523 596</a> <br />
+            <a href="tel:+2348105616400">+(234) 810 5616 400</a>
           </div>
 
           <div>
             <h3 class="resume">Resume 📜</h3>
-            <button class="btn btn-hire down-btn">Hire me</button>
+            <button class="btn btn-hire down-btn">
+              <a
+                href="https://drive.google.com/file/d/1sJijgprbNUWHB9WNk1T4A1TA3Way0FW_/view"
+                target="_blank"
+              >
+                Hire me</a
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -367,10 +372,14 @@
     <footer>
       <p>© 2021 Uduma Sonia</p>
     </footer>
-
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

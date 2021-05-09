@@ -141,6 +141,10 @@ body {
   border: 1px solid #04eeee;
 }
 
+.btn a {
+  color: #000;
+}
+
 .header-img {
   position: relative;
   display: flex;
@@ -361,6 +365,9 @@ body {
 .down-btn {
   margin-top: 20px;
 }
+.down-btn a {
+  color: #000;
+}
 
 footer {
   border-top: 1px solid gray;
@@ -441,6 +448,10 @@ footer {
   .navB > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+
+  .skills {
+    margin-top: 50px;
   }
 
   .skills > div > div {
