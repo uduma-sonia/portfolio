@@ -91,9 +91,10 @@ body {
 }
 
 .header-text h4 {
-  font-size: 18x;
+  font-size: 12px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .header-text h1 {
@@ -108,7 +109,7 @@ body {
 }
 
 .header-text h2 {
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Martel", serif;
   padding-top: 20px;
   font-family: "Roboto Mono", monospace;
@@ -125,10 +126,11 @@ body {
 .btn {
   background-color: #04eeee;
   font-family: "Roboto Mono", monospace;
-  font-size: 20px;
+  font-size: 18px;
   padding: 7px 25px;
   border-radius: 50px;
-  margin-top: 50px;
+  border: none;
+  margin-top: 30px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -143,6 +145,10 @@ body {
 
 .btn a {
   color: #000;
+}
+
+.btn a:hover {
+  color: #a7a8a8;
 }
 
 .header-img {
