@@ -62,7 +62,6 @@
 
       <div class="nav-links">
         <a href="./index.html">Home</a>
-        <a href="#">About me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -75,16 +74,18 @@
         <div class="column is-6 header-text">
           <h4>Hello there, i'm</h4>
           <h1>Sonia Uduma<span>.</span></h1>
-          <h2>developer 👨‍💻</h2>
+
           <p>
-            Front-end developer <br />
-            Technical writer ✍️<br />
-            I build professional, responsive websites, <br />
-            transforming creative ideas to efficient web applications.
+            I am a front end developer 👨‍💻, <br />
+            focusing on building front end <br />
+            infrastructure for web applications. <br />
+            Skilled at building scalable <br />
+            front end products with great user <br />
+            experience.
           </p>
 
           <button class="btn btn-hire">
-            <a href="#contact"> Hire me </a>
+            <a href="#contact"> My Resume </a>
           </button>
         </div>
 
@@ -109,12 +110,12 @@
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
 
-            <a href="https://instagram.com/that_sonia" target="_blank"></a>
-            <ion-icon name="logo-instagram"></ion-icon>
-
+            <!-- <a href="https://instagram.com/that_sonia" target="_blank"></a>
+            <ion-icon name="logo-instagram"></ion-icon> -->
+            <!-- 
             <a href="https://codepen.io/uduma" target="_blank">
               <ion-icon name="logo-codepen"></ion-icon>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -123,73 +124,89 @@
     <!-- CIRCLES -->
     <div class="circle-1"></div>
     <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
 
     <!-- SKILLS -->
     <section class="section skills" id="skills">
-      <h2>My Skills ⚙️</h2>
+      <h2>Skills ⚙️</h2>
 
       <div class="columns">
         <div class="column is-6">
           <div>
             <button class="skill-btn btn-1">
-              <ion-icon name="logo-html5"></ion-icon>
+              <!-- <ion-icon name="logo-html5"></ion-icon> -->
               HTML
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-2">
-              <ion-icon name="logo-css3"></ion-icon>
+              <!-- <ion-icon name="logo-css3"></ion-icon> -->
               CSS
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-3">
-              <i class="icofont-bootstrap"></i>
+              <!-- <i class="icofont-bootstrap"></i> -->
               Bootsrap
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-4">
-              <i class="icofont-bootstrap"></i>
+              <!-- <i class="icofont-bootstrap"></i> -->
               Tailwind Css
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-5">
-              <ion-icon name="logo-javascript"></ion-icon>
+              <!-- <ion-icon name="logo-javascript"></ion-icon> -->
               JavaScript
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-6">
-              <ion-icon name="logo-react"></ion-icon>
-              React/Redux
+              <!-- <ion-icon name="logo-react"></ion-icon> -->
+              React.Js/Redux
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-7">
-              <ion-icon name="logo-wordpress"></ion-icon>
-              WordPress
+              <!-- <ion-icon name="logo-wordpress"></ion-icon> -->
+              Next.Js
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-8">
-              <ion-icon name="logo-firebase"></ion-icon>
+              <!-- <ion-icon name="logo-firebase"></ion-icon> -->
               Firebase
             </button>
           </div>
 
           <div>
             <button class="skill-btn btn-9">
-              <ion-icon name="git-branch-outline"></ion-icon>
-              Git
+              <!-- <ion-icon name="git-branch-outline"></ion-icon> -->
+              REST API
+            </button>
+          </div>
+
+          <div>
+            <button class="skill-btn btn-10">
+              <!-- <ion-icon name="git-branch-outline"></ion-icon> -->
+              GraphQl
+            </button>
+          </div>
+
+          <div>
+            <button class="skill-btn btn-11">
+              <!-- <ion-icon name="git-branch-outline"></ion-icon> -->
+              Git/GitHub
             </button>
           </div>
         </div>
@@ -199,153 +216,88 @@
 
     <!-- PROJECTS -->
     <section class="section sub-head" id="projects">
-      <h2>Projects i've worked on 📁</h2>
+      <h2>Projects 📁</h2>
 
       <div class="columns">
-        <div class="column">
-          <article class="accordion acc-1">
-            <input
-              type="checkbox"
-              name="collapse"
-              id="handle1"
-              checked="checked"
-            />
-            <h3 class="handle">
-              <label for="handle1">Animated landing page</label>
-            </h3>
-            <div class="content">
-              <div>
-                <h4>An animated landing page for pringles</h4>
-                <p>Tools used &UnderBar; HTML, CSS, JavaScript, GSAP</p>
+        <div class="column is-4 project-card">
+          <img src="./img/dhoro.png" class="project-img" />
+        </div>
+        <div class="column is-4 project-details">
+          <h4>Dhoro.io</h4>
 
-                <button>
-                  <a href="https://pringles-site.netlify.app" target="_blank">
-                    view site
-                    <ion-icon name="exit-outline"></ion-icon>
-                  </a>
-                </button>
+          <div class="tools">
+            <p>JavaScript</p>
+            <p>React.js</p>
+            <p>Redux</p>
+            <p>Tailwind CSS</p>
+            <p>REST API</p>
+          </div>
 
-                <button>
-                  <a
-                    href="https://github.com/uduma-sonia/Pringles-Landing-page"
-                    target="_blank"
-                  >
-                    Github
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </button>
-              </div>
+          <a class="site-link" target="_blank" href="https://dhoro.io/"
+            >Visit Site &#x021D2;</a
+          >
+        </div>
+      </div>
 
-              <div>
-                <img src="./img/pringles.png" alt="" />
-              </div>
-            </div>
-          </article>
+      <div class="columns spacing">
+        <div class="column is-4 project-card">
+          <img src="./img/paypal.png" class="project-img" />
+        </div>
+        <div class="column is-4 project-details">
+          <h4>PayPal Clone</h4>
 
-          <article class="accordion acc-2">
-            <input type="checkbox" name="collapse2" id="handle2" />
-            <h3 class="handle">
-              <label for="handle2">Search engine </label>
-            </h3>
-            <div class="content">
-              <div>
-                <h4>A search engine for pictures</h4>
-                <p>tools used &UnderBar; HTML, CSS, JavaScript , API</p>
+          <div class="tools">
+            <p>JavaScript</p>
+            <p>Next.js</p>
+            <p>Tailwind CSS</p>
+          </div>
 
-                <button>
-                  <a href="https://pretzz.netlify.app" target="_blank">
-                    view site
-                    <ion-icon name="exit-outline"></ion-icon>
-                  </a>
-                </button>
+          <p class="github-link">
+            <a
+              target="_blank"
+              href="https://github.com/uduma-sonia/paypal-clone"
+              >GitHub &#x021D2;</a
+            >
+          </p>
 
-                <button>
-                  <a
-                    href="https://github.com/uduma-sonia/search-engine"
-                    target="_blank"
-                  >
-                    Github
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </button>
-              </div>
+          <a
+            class="site-link"
+            target="_blank"
+            href="https://www.paypal.com/ng/webapps/mpp/home"
+            >Visit Site &#x021D2;</a
+          >
+        </div>
+      </div>
 
-              <div>
-                <img src="./img/pretzz.png" alt="" />
-              </div>
-            </div>
-          </article>
+      <div class="columns spacing">
+        <div class="column is-4 project-card">
+          <img src="./img/pringles.png" class="project-img" />
+        </div>
+        <div class="column is-4 project-details">
+          <h4>Pringles Landing page</h4>
 
-          <article class="accordion acc-3">
-            <input type="checkbox" name="collapse2" id="handle3" />
-            <h3 class="handle">
-              <label for="handle3">E-commerce site</label>
-            </h3>
-            <div class="content">
-              <div>
-                <h4>An E-Commerce site for a liquor store</h4>
-                <p>(under construction)</p>
-                <p>
-                  tools used &UnderBar; HTML, CSS, JavaScript (local storage)
-                </p>
+          <div class="tools">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>GSAP</p>
+            <p>Animations</p>
+          </div>
 
-                <button>
-                  <a href="https://w-l-store.netlify.app" target="_blank">
-                    view site
-                    <ion-icon name="exit-outline"></ion-icon>
-                  </a>
-                </button>
+          <p class="github-link">
+            <a
+              target="_blank"
+              href="https://github.com/uduma-sonia/pringles-landing-page"
+              >GitHub &#x021D2;</a
+            >
+          </p>
 
-                <button>
-                  <a
-                    href="https://github.com/uduma-sonia/e-commerce-site"
-                    target="_blank"
-                  >
-                    Github
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </button>
-              </div>
-
-              <div>
-                <img src="./img/w_l.png" alt="" />
-              </div>
-            </div>
-          </article>
-
-          <article class="accordion acc-4">
-            <input type="checkbox" name="collapse2" id="handle4" />
-            <h3 class="handle">
-              <label for="handle4">Construction Company</label>
-            </h3>
-            <div class="content">
-              <div>
-                <h4>A full website for a construction company</h4>
-                <p>tools used &UnderBar; HTML, CSS, Bootstrap, JavaScript</p>
-
-                <button>
-                  <a href="https://paddle-homes.netlify.app" target="_blank">
-                    view site
-                    <ion-icon name="exit-outline"></ion-icon>
-                  </a>
-                </button>
-
-                <button>
-                  <a
-                    href="https://github.com/uduma-sonia/paddle-homes"
-                    target="_blank"
-                  >
-                    Github
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </button>
-              </div>
-
-              <div>
-                <img src="./img/paddle.png" alt="" />
-              </div>
-            </div>
-          </article>
+          <a
+            class="site-link"
+            target="_blank"
+            href="https://github.com/uduma-sonia/pringles-landing-page"
+            >Visit Site &#x021D2;</a
+          >
         </div>
       </div>
     </section>
@@ -365,7 +317,6 @@
             </a>
 
             <h3 class="phone">Phone 📱</h3>
-            <a href="tel:+2347011523595">+(234) 701 1523 596</a> <br />
             <a href="tel:+2348105616400">+(234) 810 5616 400</a>
           </div>
 
@@ -373,10 +324,10 @@
             <h3 class="resume">Resume 📜</h3>
             <button class="btn btn-hire down-btn">
               <a
-                href="https://drive.google.com/file/d/1ffF5ukpI3Xxgkz0rditSPAvjXPzWncu9/view?usp=sharing"
+                href="https://drive.google.com/file/d/1JNvBBKHnceMIDBlP8gjwIv0TOXLxZ-w9/view?usp=sharing"
                 target="_blank"
               >
-                My CV</a
+                Download</a
               >
             </button>
           </div>

@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(1, 21, 34);
 }
 
 .skills h2,
@@ -19,7 +19,7 @@ body {
 .sub-head h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
   letter-spacing: 3px;
   padding-bottom: 50px;
@@ -58,7 +58,7 @@ body {
 .navB > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 50px;
   margin-top: 30px;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 #logo {
-  width: 70px;
+  width: 50px;
 }
 
 .header {
@@ -91,14 +91,14 @@ body {
 }
 
 .header-text h4 {
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .header-text h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #ffffff;
@@ -110,14 +110,13 @@ body {
 
 .header-text h2 {
   font-size: 22px;
-  font-family: "Martel", serif;
   padding-top: 20px;
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
 }
 
 .header-text p {
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Martel", serif;
   font-family: "Roboto Mono", monospace;
   margin-top: 10px;
@@ -126,7 +125,7 @@ body {
 .btn {
   background-color: #04eeee;
   font-family: "Roboto Mono", monospace;
-  font-size: 18px;
+  font-size: 15px;
   padding: 7px 25px;
   border-radius: 50px;
   border: none;
@@ -157,7 +156,7 @@ body {
 }
 
 .bitmoji {
-  width: 400px;
+  width: 350px;
   padding-top: 60px;
 }
 
@@ -172,7 +171,7 @@ body {
 .socials ion-icon {
   font-size: 25px;
   margin-bottom: 25px;
-  color: #04eeee;
+  color: #d8dada;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -183,23 +182,34 @@ body {
 
 .circle-1 {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid rgb(57, 255, 7);
   border-radius: 49% 61% 48% 50% / 17% 52% 51% 80%;
   bottom: 10%;
   right: 10%;
-  animation: animate 60s linear infinite;
+  animation: animate1 60s linear infinite;
 }
 
 .circle-2 {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 2px solid rgb(255, 98, 7);
   top: 350px;
   left: 40%;
   border-radius: 100% 0% 73% 0% / 100% 0% 100% 60%;
+}
+
+.circle-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(61, 62, 63);
+  top: 80px;
+  right: -0%;
+  border-radius: 64% 36% 100% 0% / 94% 55% 45% 6%;
+  animation: animate2 60s linear infinite;
 }
 
 /* SKILLS */
@@ -214,14 +224,15 @@ body {
 
 .skill-btn {
   position: relative;
-  width: 250px;
-  font-size: 20px;
+  width: 200px;
+  font-size: 15px;
   font-family: "Roboto Mono", monospace;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid grey;
+  background-color: transparent;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 3px;
   outline: none;
   color: #b3b3b3;
-  padding: 10px 50px;
+  padding: 10px 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,112 +246,79 @@ body {
   bottom: -3%;
   right: -3%;
   background-color: transparent;
-  border: 1px solid rgba(255, 98, 7, 0.699);
+  border: 1px solid rgba(255, 98, 7, 0.822);
+  border-radius: 3px;
   z-index: 1;
 }
 
-/* COLLAPSIBLE */
-
-.accordion > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
+/* PROJECT ////////////////////////////// */
+#projects > div {
+  padding-left: 70px;
 }
 
-.accordion .content {
-  overflow-y: hidden;
-  height: 0;
-  transition: height 0.3s ease;
+.project-card {
+  border-radius: 5px;
+  box-shadow: 1px 0px 4px 3px rgba(43, 41, 41, 0.87);
+  -webkit-box-shadow: 1px 0px 4px 3px rgba(43, 41, 41, 0.87);
+  -moz-box-shadow: 1px 0px 4px 3px rgba(43, 41, 41, 0.87);
 }
 
-.accordion > input[type="checkbox"]:checked ~ .content {
-  height: auto;
-  overflow: visible;
+.project-details {
+  position: relative;
 }
 
-.accordion {
-  margin-bottom: 1em;
-  padding: 0px 100px 0px 50px;
-}
-
-.accordion label {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  display: block;
-  color: #04eeee;
-  cursor: pointer;
-  font-weight: normal;
-  padding: 15px;
-  border: 1px solid rgb(255, 98, 7);
-}
-
-.accordion > input[type="checkbox"]:checked ~ .content {
-  font-family: "Roboto Mono", monospace;
-  padding: 15px;
-  border: 1px solid #414040;
-  border-top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
-
-.content h4,
-.content p {
-  color: #b3b3b3;
-}
-
-.content button {
-  border-bottom: 5px solid rgb(255, 98, 7);
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  color: #000;
-  padding: 5px 8px;
-  margin-top: 15px;
+.project-details h4 {
   font-size: 20px;
   font-weight: 700;
-  cursor: pointer;
-  outline: none !important;
-  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
-.content a {
+.project-details .tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-details .tools p {
   font-family: "Roboto Mono", monospace;
-  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 9px;
+  background-color: rgb(1, 12, 19);
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
 
-.content img {
-  width: 400px;
-  height: 300px;
-  box-shadow: 1px 1px 10px rgb(53, 52, 52);
+.project-details .site-link {
+  color: #04eeee;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.9s ease-in-out;
 }
 
-.accordion .handle {
-  margin: 0;
-  font-size: 1.125em;
-  line-height: 1.2em;
+.project-details .site-link:hover {
+  border-bottom: 1px solid #04eeee;
 }
 
-.accordion .handle label:before {
-  font-family: "fontawesome";
-  content: "\f054";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 0.58em;
-  line-height: 1.556em;
-  vertical-align: middle;
+.project-details .github-link {
+  margin-top: 30px;
 }
 
-.accordion > input[type="checkbox"]:checked ~ .handle label:before {
-  content: "\f078";
+.project-details .github-link a {
+  color: #04eeee;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
-.accordion p:last-child {
-  margin-bottom: 0;
+.spacing {
+  margin-top: 100px;
 }
 
-/* CONTACT */
+/* CONTACT //////////////////////////////////////////// */
 .contact > div > div {
   padding: 0px 400px 0px 50px;
   display: flex;
@@ -348,7 +326,7 @@ body {
 }
 
 .contact h3 {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #04eeee;
   padding-bottom: 0px;
@@ -356,7 +334,7 @@ body {
 
 .contact a {
   font-family: "Roboto Mono", monospace;
-  font-size: 22px;
+  font-size: 15px;
   color: rgb(231, 229, 229);
 }
 
@@ -381,7 +359,7 @@ footer {
   text-align: center;
 }
 
-@keyframes animate {
+@keyframes animate1 {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
@@ -389,6 +367,18 @@ footer {
 
   100% {
     transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-1000px) rotate(720deg);
     opacity: 0;
   }
 }
@@ -517,7 +507,7 @@ footer {
   }
 
   #logo {
-    width: 40px;
+    width: 30px;
   }
 
   .contact h2,
